@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { addNewCrop } from "../services/api";
-import "../styles/AddNewCrop.css";
+import "../styles/AddnewCrop.css";
 
 export default function AddNewCrop() {
 
