@@ -1,0 +1,58 @@
+/* Full page center */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background: transparent;
+
+}
+
+/* Card */
+.auth-box {
+  background: transparent;
+  padding: 30px 35px;
+  width: 380px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Heading */
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+/* Inputs */
+.auth-box input {
+  width: 100%;
+  padding: 11px 12px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+.auth-box input:focus {
+  outline: none;
+  border-color: #2e7d32;
+}
+
+/* Button */
+.auth-box button {
+  width: 100%;
+  padding: 11px;
+  background-color: #2e7d32;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-box button:hover {
+  background-color: #1b5e20;
+}

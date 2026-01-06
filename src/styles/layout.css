@@ -1,0 +1,12 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f1f8f4;
+  margin-bottom: 0; /* ✅ no gap */
+}

@@ -1,0 +1,114 @@
+/* Layout ensures footer stays at bottom */
+.profile-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Center content */
+.profile-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+/* BIG SQUARE CARD */
+.profile-box {
+  width: 420px;
+  min-height: 520px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title */
+.profile-title {
+  margin-bottom: 20px;
+  color: #1b5e20;
+}
+
+/* Profile Image */
+.profile-image-large {
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 4px solid #2e7d32;
+  margin-bottom: 20px;
+}
+
+/* Details */
+.profile-details p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.profile-details span {
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+/* Actions */
+.profile-actions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-actions input {
+  border: 1px solid #c8e6c9;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.profile-actions button {
+  padding: 10px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.profile-actions button:hover {
+  background: #1b5e20;
+}
+
+.profile-actions button:disabled {
+  background: #9ccc9c;
+  cursor: not-allowed;
+}
+.profile-box p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 14px;
+  margin: 8px 0;
+
+  background-color: #f5f9ff;   /* light blue-gray */
+  border-radius: 8px;
+
+  font-size: 15px;
+  color: #333;
+}
+
+/* Label (Name, Email, Phone) */
+.profile-box p::before {
+  content: attr(data-label);
+  font-weight: 600;
+  color: #1e3a8a; /* dark blue */
+}
+
+/* Value text */
+.profile-box p span {
+  color: #111827;
+}

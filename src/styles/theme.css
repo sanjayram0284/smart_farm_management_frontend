@@ -1,0 +1,85 @@
+:root {
+  --green-dark: #1b5e20;
+  --green-main: #2e7d32;
+  --green-light: #a5d6a7;
+  --bg-light: #f1f8f4;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-light);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #2e7d32;
+  color: white;
+}
+
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #e8f5e9;
+  margin-top: 40px;
+}
+
+.page {
+  padding: 30px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 30px;
+  background-color: #2e7d32; /* green */
+  color: white;
+}
+
+.nav h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links a.active {
+  background-color: #1b5e20; /* darker green */
+}
+
+.nav button {
+  background-color: white;
+  color: #2e7d32;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav button:hover {
+  background-color: #c8e6c9;
+}

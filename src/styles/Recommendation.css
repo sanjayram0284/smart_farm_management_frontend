@@ -1,0 +1,64 @@
+/* Layout */
+.recommendation-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Left side */
+.recommendation-main {
+  flex: 3;
+}
+
+/* Filter box */
+.filter-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-box select,
+.filter-box button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.filter-box button {
+  background: #2e7d32;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.filter-box button:hover {
+  background: #1b5e20;
+}
+
+/* Crop cards */
+.recommendation-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.crop-card {
+  background: #f9fff9;
+  border: 1px solid #c8e6c9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Chatbot side */
+.chatbot-container {
+  flex: 1;
+  position: sticky;
+  top: 80px;
+  height: 500px;
+}
+
+/* Loading */
+.loading {
+  color: #2e7d32;
+  font-weight: bold;
+}
